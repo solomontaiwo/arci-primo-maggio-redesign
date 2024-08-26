@@ -10,7 +10,7 @@ const EventList = ({ limit }) => {
     const accessToken = process.env.REACT_APP_FACEBOOK_ACCESS_TOKEN;
 
     fetch(
-      `https://graph.facebook.com/v20.0/${pageId}/events?access_token=${accessToken}`
+      `https://graph.facebook.com/v20.0/${pageId}/events?access_token=${accessToken}&fields=name,description,start_time,end_time,place,cover`
     )
       .then((response) => {
         if (!response.ok) {

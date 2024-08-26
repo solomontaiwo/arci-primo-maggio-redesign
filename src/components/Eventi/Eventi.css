@@ -1,19 +1,17 @@
 #events {
     padding: 40px;
-    background-color: #cc0000; /* Rosso per la sezione degli eventi */
-    color: white;
+    background-color: #f2f2f2; /* Colore di sfondo chiaro e neutro */
+    color: #333; /* Colore del testo più scuro per una migliore leggibilità */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra più marcata per maggiore enfasi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra più leggera */
+    margin-bottom: 60px; /* Distanza rispetto alle altre sezioni */
   }
   
   #events h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .event-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #cc0000; /* Mantenere il colore rosso per il titolo */
+    text-align: center; /* Centrare il titolo */
+    border-bottom: 2px solid #cc0000; /* Linea di separazione sotto il titolo */
+    padding-bottom: 10px; /* Spazio sotto il titolo */
   }

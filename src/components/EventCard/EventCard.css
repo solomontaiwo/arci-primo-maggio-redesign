@@ -1,29 +1,48 @@
 .event-card {
-  background: white;
+  background: #ffffff; /* Sfondo bianco per il contrasto con la sezione */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra più marcata */
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aggiungi animazione per l'ombra */
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta l'ombra al passaggio del mouse */
+}
+
+.event-card img.event-image {
   width: 100%;
-  max-width: 300px;
-  margin: 10px;
-}
-
-.event-card.past {
-  background-color: #f8d7da;
-}
-
-.event-card.present {
-  background-color: #fff3cd;
-}
-
-.event-card.future {
-  background-color: #d4edda;
+  height: 200px; /* Altezza fissa per le immagini */
+  object-fit: cover; /* Ritaglia le immagini per adattarle */
+  border-radius: 8px 8px 0 0; /* Arrotonda gli angoli superiori */
 }
 
 .event-card h3 {
-  margin-top: 0;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: #cc0000; /* Colore del titolo della card */
 }
 
 .event-card p {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #666; /* Testo leggermente più scuro */
+  margin: 10px 0;
+}
+
+.event-card .event-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #cc0000; /* Colore di Facebook */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.event-card .event-link:hover {
+  background-color: #b30000; /* Colore più scuro per l'hover */
 }
