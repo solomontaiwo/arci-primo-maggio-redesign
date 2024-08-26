@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/arci-primo-maggio-redesign/static/css/main.5e9f655d.css",
-    "main.js": "/arci-primo-maggio-redesign/static/js/main.fa40185e.js",
+    "main.css": "/arci-primo-maggio-redesign/static/css/main.574ce273.css",
+    "main.js": "/arci-primo-maggio-redesign/static/js/main.d06f9b36.js",
     "static/media/logo.png": "/arci-primo-maggio-redesign/static/media/logo.ef75560cc0e2a605ec6a.png",
     "index.html": "/arci-primo-maggio-redesign/index.html",
-    "main.5e9f655d.css.map": "/arci-primo-maggio-redesign/static/css/main.5e9f655d.css.map",
-    "main.fa40185e.js.map": "/arci-primo-maggio-redesign/static/js/main.fa40185e.js.map"
+    "main.574ce273.css.map": "/arci-primo-maggio-redesign/static/css/main.574ce273.css.map",
+    "main.d06f9b36.js.map": "/arci-primo-maggio-redesign/static/js/main.d06f9b36.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e9f655d.css",
-    "static/js/main.fa40185e.js"
+    "static/css/main.574ce273.css",
+    "static/js/main.d06f9b36.js"
   ]
 }
