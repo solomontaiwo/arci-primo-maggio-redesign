@@ -1,20 +1,54 @@
+/* EventList.css */
+
 .event-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
   padding: 20px;
-  justify-items: center;
-  align-items: start;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Nasconde il contenuto in eccesso */
 }
 
-@media (min-width: 768px) {
-  .event-list {
-    grid-template-columns: repeat(2, 1fr);
+.event-list .slick-slide {
+  padding: 0 5px; /* Riduce il padding per evitare overflow */
+}
+
+.event-list .slick-prev,
+.event-list .slick-next {
+  color: #cc0000;
+  font-size: 1.5rem;
+}
+
+.event-list .slick-prev:before,
+.event-list .slick-next:before {
+  color: #cc0000;
+}
+
+.event-list .slick-dots li button:before {
+  color: #cc0000;
+  font-size: 12px;
+}
+
+.event-list .slick-dots li.slick-active button:before {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .event-list .slick-prev,
+  .event-list .slick-next {
+    display: none; /* Nasconde i pulsanti su mobile */
   }
-}
 
-@media (min-width: 1024px) {
-  .event-list {
-    grid-template-columns: repeat(3, 1fr);
+  .event-list .slick-dots {
+    bottom: -30px;
+  }
+
+  /* Rende più piccolo il padding laterale */
+  .event-list .slick-slide {
+    padding: 0 10px;
+  }
+
+  /* Evita che le schede siano troppo grandi per lo schermo */
+  .event-list .slick-slide img {
+    height: auto;
   }
 }

@@ -1,15 +1,33 @@
+/* App.css */
+
+/* Temi chiaro e scuro */
+:root {
+  --navbar-bg-color: #ffcc00; /* Giallo per tema chiaro */
+  --navbar-text-color: #333; /* Testo scuro per tema chiaro */
+  --navbar-hover-color: #cc0000; /* Rosso per hover */
+  --body-bg-color: #f4f4f4; /* Colore di sfondo chiaro */
+  --body-bg-color-alt: #ffffff; /* Alternativa per il tema chiaro */
+  --text-color: #333; /* Colore del testo */
+}
+
+body.dark {
+  --navbar-bg-color: #333; /* Scuro per tema scuro */
+  --navbar-text-color: #fff; /* Testo chiaro per tema scuro */
+  --navbar-hover-color: #ffcc00; /* Giallo per hover su tema scuro */
+  --body-bg-color: #1c1c1c; /* Colore di sfondo scuro */
+  --body-bg-color-alt: #333; /* Alternativa per il tema scuro */
+  --text-color: #ccc; /* Colore del testo per tema scuro */
+}
+
+/* Applicazione del tema */
 html,
 body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: Arial, sans-serif; /* Imposta il font dell'intero sito */
-}
-
-body {
-  background: #f4f4f4; /* Colore di sfondo chiaro per tutto il sito */
-  color: #333; /* Colore del testo */
-  scroll-behavior: smooth; /* Aggiungi uno scrolling fluido */
+  font-family: Arial, sans-serif;
+  background: var(--body-bg-color);
+  color: var(--text-color);
 }
 
 .app {
@@ -30,8 +48,8 @@ footer {
 }
 
 nav {
-  background-color: #333;
-  color: white;
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
 }
 
 nav ul {
@@ -46,12 +64,12 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--navbar-text-color);
   padding: 15px;
   text-decoration: none;
   display: block;
 }
 
 nav ul li a:hover {
-  background-color: #575757;
+  background-color: var(--navbar-hover-color);
 }

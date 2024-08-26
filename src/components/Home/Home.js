@@ -6,7 +6,7 @@ const Home = () => (
   <div className="home-container">
     <section id="events">
       <h2>Eventi</h2>
-      <EventList limit={3} />
+      <EventList />
     </section>
 
     <section id="about">

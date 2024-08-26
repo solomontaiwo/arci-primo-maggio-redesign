@@ -1,40 +1,47 @@
+/* Home.css */
+
+/* Contenitore principale della home */
 .home-container {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background: #ffffff; /* Colore di sfondo per la sezione principale */
-  border-radius: 8px; /* Angoli arrotondati per un effetto moderno */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  background: var(--body-bg-color); /* Usa la variabile del tema */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Sezioni */
 section {
-  margin-bottom: 60px; /* Aumenta la distanza tra le sezioni */
-  padding: 20px; /* Aggiungi padding per il contenuto */
-  background-color: #f9f9f9; /* Colore di sfondo leggero per ogni sezione */
-  border-radius: 8px; /* Aggiungi angoli arrotondati per un effetto moderno */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per dare profondità */
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: var(--body-bg-color); /* Usa la variabile del tema */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section:nth-of-type(even) {
-  background-color: #ffffff; /* Colore di sfondo alternato per ogni sezione */
+  background-color: var(--body-bg-color-alt); /* Colore di sfondo alternato */
 }
 
+/* Titoli delle sezioni */
 section h2 {
   font-size: 2.5rem;
-  color: #cc0000; /* Rosso */
-  margin-bottom: 10px; /* Spazio sotto il titolo */
+  color: var(--text-color); /* Colore del testo */
+  margin-bottom: 10px;
 }
 
+/* Testo delle sezioni */
 section p {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
+/* Stili su dispositivi mobili */
 @media (max-width: 768px) {
   section {
-    margin-bottom: 40px; /* Riduci lo spazio tra le sezioni sui dispositivi mobili */
-    padding: 10px; /* Riduci il padding sui dispositivi mobili */
+    margin-bottom: 40px;
+    padding: 10px;
   }
 
   section h2 {

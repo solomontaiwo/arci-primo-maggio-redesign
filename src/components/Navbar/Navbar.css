@@ -1,20 +1,26 @@
+/* Navbar.css */
+
+/* Stile generale della navbar */
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #ffcc00; /* Giallo */
-  color: #333; /* Testo scuro per contrasto */
-  padding: 10px 0;
+  background-color: var(--navbar-bg-color); /* Usa la variabile del tema */
+  color: var(--navbar-text-color);
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000; /* Assicura che la navbar sia sopra altri contenuti */
+  z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo nella navbar */
 .navbar-logo img {
-  height: 40px; /* Regola l'altezza del logo */
+  height: 40px;
+  margin-right: 20px;
 }
 
+/* Menu della navbar */
 .navbar-menu {
   list-style: none;
   display: flex;
@@ -22,16 +28,58 @@
   padding: 0;
 }
 
+/* Elementi del menu */
 .navbar-menu li {
   margin-left: 20px;
 }
 
-.navbar-menu a {
-  color: #333; /* Testo scuro per contrasto */
+/* Link del menu */
+.navbar-menu a, .theme-toggle {
+  color: var(--navbar-text-color);
   text-decoration: none;
+  padding: 15px;
   font-weight: bold;
+  display: block;
 }
 
-.navbar-menu a:hover {
-  color: #cc0000; /* Rosso per hover */
+/* Hover sui link del menu */
+.navbar-menu a:hover, .theme-toggle:hover {
+  background-color: var(--navbar-hover-color);
+}
+
+/* Pulsante del menu hamburger */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--navbar-text-color);
+}
+
+/* Stili per il menu su mobile */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Nasconde il menu per default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: var(--navbar-bg-color);
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-menu.open {
+    display: flex; /* Mostra il menu quando aperto */
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .navbar-toggle {
+    display: block; /* Mostra il pulsante hamburger su mobile */
+  }
 }
