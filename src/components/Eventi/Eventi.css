@@ -1,0 +1,19 @@
+#events {
+    padding: 40px;
+    background-color: #cc0000; /* Rosso per la sezione degli eventi */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra più marcata per maggiore enfasi */
+  }
+  
+  #events h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }

@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from "react";
-import EventCard from "./EventCard";
+import EventCard from "../EventCard/EventCard";
+import "./EventList.css";
 
 const EventList = ({ limit }) => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
+    const pageId = process.env.REACT_APP_FACEBOOK_PAGE_ID;
+    const accessToken = process.env.REACT_APP_FACEBOOK_ACCESS_TOKEN;
+
     fetch(
-      "https://graph.facebook.com/v12.0/{page-id}/events?access_token={your-access-token}"
+      `https://graph.facebook.com/v20.0/${pageId}/events?access_token=${accessToken}`
     )
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
       .then((data) => {
         const sortedEvents = data.data.sort(
           (a, b) => new Date(a.start_time) - new Date(b.start_time)

@@ -1,13 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import ChiSiamo from "./components/ChiSiamo";
-import LaNostraStoria from "./components/LaNostraStoria";
-import Eventi from "./components/Eventi";
-import Tesseramento from "./components/Tesseramento";
-import Informazioni from "./components/Informazioni";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
+import Eventi from "./components/Eventi/Eventi";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -17,12 +13,11 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/chi-siamo" element={<ChiSiamo />} />
-            <Route path="/la-nostra-storia" element={<LaNostraStoria />} />
-            <Route path="/eventi" element={<Eventi />} />
-            <Route path="/tesseramento" element={<Tesseramento />} />
-            <Route path="/informazioni" element={<Informazioni />} />
+            <Route path="/arci-primo-maggio-redesign" element={<Home />} />
+            <Route
+              path="/arci-primo-maggio-redesign/eventi"
+              element={<Eventi />}
+            />
           </Routes>
         </main>
         <Footer />

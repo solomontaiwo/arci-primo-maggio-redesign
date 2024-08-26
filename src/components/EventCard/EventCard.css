@@ -1,9 +1,11 @@
 .event-card {
-  border: 1px solid #ccc;
+  background: white;
   padding: 20px;
-  margin: 10px 0;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
 }
 
 .event-card.past {
@@ -19,9 +21,9 @@
 }
 
 .event-card h3 {
-  margin: 0 0 10px;
+  margin-top: 0;
 }
 
 .event-card p {
-  margin: 5px 0;
+  font-size: 0.9rem;
 }

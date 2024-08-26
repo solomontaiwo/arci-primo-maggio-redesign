@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif; /* Imposta il font dell'intero sito */
+}
+
+body {
+  background: #f4f4f4; /* Colore di sfondo chiaro per tutto il sito */
+  color: #333; /* Colore del testo */
+  scroll-behavior: smooth; /* Aggiungi uno scrolling fluido */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}

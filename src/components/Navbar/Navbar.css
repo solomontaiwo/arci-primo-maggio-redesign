@@ -1,0 +1,37 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffcc00; /* Giallo */
+  color: #333; /* Testo scuro per contrasto */
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Assicura che la navbar sia sopra altri contenuti */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+  height: 40px; /* Regola l'altezza del logo */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu a {
+  color: #333; /* Testo scuro per contrasto */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-menu a:hover {
+  color: #cc0000; /* Rosso per hover */
+}

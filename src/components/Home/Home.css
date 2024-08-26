@@ -1,0 +1,47 @@
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff; /* Colore di sfondo per la sezione principale */
+  border-radius: 8px; /* Angoli arrotondati per un effetto moderno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+section {
+  margin-bottom: 60px; /* Aumenta la distanza tra le sezioni */
+  padding: 20px; /* Aggiungi padding per il contenuto */
+  background-color: #f9f9f9; /* Colore di sfondo leggero per ogni sezione */
+  border-radius: 8px; /* Aggiungi angoli arrotondati per un effetto moderno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per dare profondità */
+}
+
+section:nth-of-type(even) {
+  background-color: #ffffff; /* Colore di sfondo alternato per ogni sezione */
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #cc0000; /* Rosso */
+  margin-bottom: 10px; /* Spazio sotto il titolo */
+}
+
+section p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 40px; /* Riduci lo spazio tra le sezioni sui dispositivi mobili */
+    padding: 10px; /* Riduci il padding sui dispositivi mobili */
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 0.9rem;
+  }
+}
